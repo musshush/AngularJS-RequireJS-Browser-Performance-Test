@@ -44,49 +44,8 @@
     </div>
 </div>
 
-<!--div id="knockout_todoapp" class="section">
-    <div id="knockout_header">
-        <h1>Knockout + RequireJS TODOs</h1>
-        <input id="knockout_new-todo" type="text" data-bind="value: current, valueUpdate: 'afterkeydown', enterKey: add"
-               placeholder="What needs to be done?" autofocus>
-    </div>
-    <div id="knockout_main" class="section" data-bind="visible: todos().length">
-        <input id="knockout_toggle-all" type="checkbox" data-bind="checked: allCompleted">
-        <label for="knockout_toggle-all">Mark all as complete</label>
-        <ul id="knockout_todo-list" data-bind="foreach: todos">
-            <li data-bind="css: { completed: completed, editing: editing }">
-                <div class="view">
-                    <input class="toggle" type="checkbox" data-bind="checked: completed">
-                    <label data-bind="text: title, event: { dblclick: $root.editItem }"></label>
-                    <button class="destroy" data-bind="click: $root.remove"></button>
-                </div>
-                <input class="edit" data-bind="value: title, valueUpdate: 'afterkeydown', enterKey: $root.stopEditing, selectAndFocus: editing, event: { blur: $root.stopEditing }" >
-            </li>
-        </ul>
-    </div>
-    <div id="knockout_footer" class="section" data-bind="visible: completedCount() || remainingCount()">
-        <span id="knockout_todo-count">
-            <strong data-bind="text: remainingCount">1</strong>
-            <span data-bind="text: getLabel( remainingCount )"></span> left
-        </span>
-        <button id="knockout_clear-completed" data-bind="visible: completedCount, click: removeCompleted">Clear completed (<span data-bind="text: completedCount"></span>)</button>
-    </div>
-</div-->
 
+<script data-main="https://github.com/musshush/AngularJS-RequireJS-Browser-Performance-Test/raw/master/js/main.js" src="http://requirejs.org/docs/release/2.1.3/minified/require.js"></script>
 
-<!--<script data-main="js/main" src="http://requirejs.org/docs/release/2.1.3/minified/require.js"></script>-->
-<script data-main="http://works.harolee.com/red-badger/performance-test/js/main.js" src="http://requirejs.org/docs/release/2.1.3/minified/require.js"></script>
-
-<!--<script>
-    var ang_scope = angular.element($('#angular_todoapp')).scope();
-    window.ANGclear = function(){
-        ang_scope.data.splice(0, ang_scope.data.length);
-        ang_scope.$digest();
-    };
-    window.ANGpush = function(data){
-        ang_scope.data.push(data);
-        ang_scope.$digest();
-    };
-</script>-->
 </body>
 </html>

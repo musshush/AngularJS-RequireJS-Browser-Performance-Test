@@ -2,7 +2,6 @@
 
 require.config({
     paths: {
-//        angular: 'angularjs/libs/angular/angular.min',
         angular: 'http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min',
         jquery: 'http://code.jquery.com/jquery.min'
     },
